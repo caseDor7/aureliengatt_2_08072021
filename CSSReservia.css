@@ -96,7 +96,7 @@ table {
 .menu-item-hebergements,
 .menu-item-activites,
 .menu-item-inscription{
-  padding-right: 60px;
+  padding-right: 3rem;
 }
 
 ul,
@@ -106,30 +106,32 @@ li {
 
 .slogan-header {
   margin-left: 55px;
-  line-height: 0.5em;
+  line-height: 0.5rem;
 
 }
 
-.under-slogan {
-  font-size: 14px;
+.slogan-header-sub {
+  font-size: 93%;
 }
 
 .search-block {
   padding-left: 55px;
+  
 }
 
 .search-filter {
+  display: flex;
   align-items: center;
-  background-color: red;
   margin: auto;
-  
-  
-  
 }
 
 .section-search-filters {
   display:flex;
   align-items: center;
-  background-color: #ccc;
-  flex-wrap: nowrap;
+  flex-wrap: <wrap;
 }
+
+.search-block-info {
+  display: flex;
+  align-items: center;
+  }
