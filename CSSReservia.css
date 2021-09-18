@@ -128,10 +128,30 @@ li {
 .section-search-filters {
   display:flex;
   align-items: center;
-  flex-wrap: <wrap;
 }
 
 .search-block-info {
-  display: flex;
+  display: flex;  
   align-items: center;
   }
+
+.search-block_form-wrapper i, input, button {
+  padding: 1rem 1.2rem;
+}
+
+.search-block_form-wrapper i {
+  background-color: lightgrey;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.search-block_form-wrapper button {
+  background-color: #0065FC;
+  border-radius: 0rem 1rem 1rem 0;
+  padding: 1rem 1.2rem;
+}
+
+.search-block_form-wrapper input {
+  font-weight: bold;
+  color: black;
+}
+
