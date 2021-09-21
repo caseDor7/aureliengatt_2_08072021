@@ -79,13 +79,21 @@ table {
 }
 
 
-.navigation-menu-wrapper {
+.navigation-menu-wrapper, .navigation-sub-menu-wrapper {
   display: flex;
   flex-direction: row;
   padding: 0px;
   align-items: center;
   justify-content: flex-end;
-  background-color: #ccc;
+    
+}
+
+.navigation-sub-menu-wrapper a:hover; {
+
+  border-top: 3px solid #0065fc;
+  padding: 2rem; 
+  
+
 }
 
 .menu-item-logo {
@@ -96,7 +104,22 @@ table {
 .menu-item-hebergements,
 .menu-item-activites,
 .menu-item-inscription{
-  padding-right: 3rem;
+  padding-right: 4.8rem;
+  }
+
+
+
+}
+
+li a {
+
+padding-top: 1.8rem;
+
+
+}
+
+li a:hover{
+  border-top: 3px solid #0065fc;
 }
 
 ul,
@@ -114,7 +137,7 @@ li {
   font-size: 93%;
 }
 
-.search-block {
+.search-block-wrapper {
   padding-left: 55px;
   
 }
@@ -154,4 +177,3 @@ li {
   font-weight: bold;
   color: black;
 }
-
