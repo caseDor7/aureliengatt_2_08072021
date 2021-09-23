@@ -1,8 +1,8 @@
-http://meyerweb.com/eric/tools/css/reset/ 
+/**http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 
-
+**/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,7 +20,7 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+  /**font: inherit;**/
   vertical-align: baseline;  
 }
 
@@ -41,6 +41,8 @@ section {
 body {
   line-height: 1;
   font-family: "Raleway", sans-serif;
+  margin: 15px 55px 0px 55px
+
 }
 
 ol,
@@ -71,74 +73,65 @@ table {
 
 /** CSS RESERVIA **/
 
-#site-header {
+/*#site-header {
   display: flex;
   flex-direction: column;
-  margin: 0px;
-  padding: 0px;
+}*/
+
+#header-logo {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: auto;
 }
 
-
-.navigation-menu-wrapper, .navigation-sub-menu-wrapper {
+#primary-navigation {
   display: flex;
-  flex-direction: row;
   padding: 0px;
   align-items: center;
-  justify-content: flex-end;
-    
+  flex-wrap: wrap; 
+  border: 1px solid red;  
 }
 
-.navigation-sub-menu-wrapper a:hover; {
+.primary-navigation-nav {
+  display : flex;
+  justify-content: center; 
+  border: 1px solid green}
 
-  border-top: 3px solid #0065fc;
-  padding: 2rem; 
-  
+#primary-navigation a {
+  padding-right: 4rem;
+  flex-basis: 50%;
+  text-align: center;
+  border-top : 3px solid transparent;
+  }
 
-}
+#primary-navigation a:hover {
+  border-top : 3px solid blue;
+  }
 
-.menu-item-logo {
-	margin-right: auto;
-  margin-left: 55px;
-}
+@media (max-width:800px) {
 
-.menu-item-hebergements,
-.menu-item-activites,
-.menu-item-inscription{
-  padding-right: 4.8rem;
+  .primary-navigation-nav {
+    border : 2px solid blue;
+    order : 1;
+    flex-basis: 100%;
   }
 
 
-
-}
-
-li a {
-
-padding-top: 1.8rem;
-
-
-}
-
-li a:hover{
-  border-top: 3px solid #0065fc;
-}
-
-ul,
-li {
-  list-style-type: none;
 }
 
 .slogan-header {
-  margin-left: 55px;
   line-height: 0.5rem;
-
+  padding-bottom: 0.3rem;
+  line-height: 1rem;
 }
 
 .slogan-header-sub {
-  font-size: 93%;
+  font-size: 80%;
+  padding-bottom : 0.8rem;
 }
 
 .search-block-wrapper {
-  padding-left: 55px;
+  padding-bottom : 1rem;
   
 }
 
@@ -146,11 +139,13 @@ li {
   display: flex;
   align-items: center;
   margin: auto;
+  padding-top : 1.5rem;
 }
 
 .section-search-filters {
   display:flex;
   align-items: center;
+  padding : 1rem 1.2rem;
 }
 
 .search-block-info {
@@ -158,22 +153,49 @@ li {
   align-items: center;
   }
 
-.search-block_form-wrapper i, input, button {
+.search-block_form-wrapper  i, input, location {
   padding: 1rem 1.2rem;
+  border: none;
+  transition: transform 200ms;
+
 }
+
+.search-form button {
+  opacity : 0.9;
+}
+
+.search-form button:hover  {
+   opacity : 1;
+   transform : scale(1.02);
+}
+
+.search-form  {
+  display : flex;
+  flex-wrap:nowrap;
+  }
 
 .search-block_form-wrapper i {
   background-color: lightgrey;
   border-radius: 1rem 0 0 1rem;
-}
+  }
+  
 
 .search-block_form-wrapper button {
   background-color: #0065FC;
   border-radius: 0rem 1rem 1rem 0;
   padding: 1rem 1.2rem;
+  border: none;
 }
 
 .search-block_form-wrapper input {
   font-weight: bold;
   color: black;
+}
+
+.fas.fa-money-bill-wave {
+  color: blue;
+  background-color: #deebff;
+  padding : 1rem;
+  border-radius: 50%;
+  border: none;
 }
